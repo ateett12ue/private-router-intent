@@ -1,0 +1,20 @@
+export const PathfinderErrorMapping = {
+    "AMOUNT-LOW": "Amount Too Low",
+    "AMOUNT-LOW-W-VALUE": "Amount Too Low",
+    "FWD-DPS-BLOCKED": "Liquidity Unavailable",
+    "FWD-LQ-FETCH": "Forwarder's Liquidity Unavailable",
+    "FWD-DPS-FETCH": "Forwarder's Deposited Volume Unavailable",
+    "FWD-LQ-LOW": "Not Enough Liquidity",
+    "FEE-NC": "Fee Could Not be Estimated",
+    "CIRCLE-TRANSFER-LIMIT": "Circle Transfer Limit Reached",
+    "MB-BRIDGE-LQ": "Insufficient Liquidity",
+    "MB-BRIDGE-NC": "Insufficient Liquidity",
+    "SWAP-NA": "Swap Not Supported",
+    "PATH-NF": "Path Not Found",
+    EXPLORER: "Explorer Data Unavailable",
+    "METHOD-NA": "Method Not Available",
+    "TOKEN-NF": "Token Not Found On This Chain",
+    "ADDRESS-INV": "Invalid Address",
+    "CHAIN-NF": "Chain Not Found",
+    "FEE-NF": "Fee Not Found"
+};

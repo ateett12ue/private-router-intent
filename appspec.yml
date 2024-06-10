@@ -1,0 +1,25 @@
+version: 0.0
+os: linux
+files:
+   - source: /
+     destination: /home/ubuntu/deploy/nitrointentbackend
+
+permissions:
+   - object: /
+     pattern: "**"
+     owner: ubuntu
+     group: ubuntu
+
+hooks:
+   BeforeInstall:
+      - location: ./scripts/beforeinstall.sh
+        timeout: 120000
+        runas: ubuntu
+   AfterInstall:
+      - location: ./scripts/afterinstall.sh
+        timeout: 120000
+        runas: ubuntu
+   ApplicationStart:
+      - location: ./scripts/applicationstart.sh
+        timeout: 600000
+        runas: ubuntu        
